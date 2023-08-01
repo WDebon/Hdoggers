@@ -4,23 +4,26 @@
 
 body{
     background-color: rgb(214, 179, 134);
+    margin: 0px;
+    margin-top: 5px;
 }
 
 .container {
-    margin: auto;
     width: 100vw;
 }
+
 .containerL img{
     width: 150px;
     cursor:pointer; 
 }
+
 header #logos img{
     width: 50px;
 }
 
 header ul#logos {
     background-color: blanchedalmond;
-    border-radius: 10px 0px 10px 100px;
+    border-radius: 10px 0px 0px 100px;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
