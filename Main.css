@@ -8,7 +8,9 @@ body {
     margin-top: 5px;
 }
 
-.container {width: 100vw;}
+.container {
+    width: 100vw;
+}
 
 .containerL img {
     width: 150px;
@@ -20,7 +22,9 @@ header #logos img {
     cursor: pointer;
 }
 
-header #logos img:hover {filter: saturate(3);}
+header #logos img:hover {
+    filter: saturate(3);
+}
 
 header ul#logos {
     background-color: blanchedalmond;
@@ -57,10 +61,10 @@ header h1 {
     font-family: 'changa', sans-serif;
     font-weight: bolder;
     cursor: pointer;
+    /* padding: 5px; */
 }
 
 #redirects li:hover {
-    padding: 5px;
     background-color: rgb(153, 114, 63);
 }
 
