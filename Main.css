@@ -28,7 +28,7 @@ section>.container {
     background-repeat: no-repeat;
     background-position: center; */
     background-color: var(--cards);
-    width: 50vw;
+    width: 40vw;
     margin: 20px;
     border: 10px solid var(--cards);
     border-radius: 10px;
