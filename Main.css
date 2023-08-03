@@ -8,9 +8,7 @@ body {
     margin-top: 5px;
 }
 
-.container {
-    width: 100vw;
-}
+.container {width: 100vw;}
 
 .containerL img {
     width: 150px;
@@ -19,7 +17,10 @@ body {
 
 header #logos img {
     width: 50px;
+    cursor: pointer;
 }
+
+header #logos img:hover {filter: saturate(3);}
 
 header ul#logos {
     background-color: blanchedalmond;
@@ -35,23 +36,32 @@ header h1 {
     text-align: center;
     justify-content: left;
     margin-bottom: 0px;
+    font-family: 'Lilita One', cursive;
+    font-weight: 100;
+    color: rgb(92, 45, 45);
 }
 
-#redirects {
-    padding-left: 25px;
-}
+/* #redirects {padding-left: auto;} */
 
 .container hr {
-    border: 2px solid rgba(1, 1, 15, 0.486);
+    border: 2px solid rgba(92, 12, 32, 0.699);
     border-radius: 10px;
     width: 50%;
-
 }
 
 #redirects li {
     display: inline-flex;
     padding: 5px;
     background-color: rgb(233, 193, 160);
+    font-size: 15px;
+    font-family: 'changa', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#redirects li:hover {
+    padding: 5px;
+    background-color: rgb(153, 114, 63);
 }
 
 #Int {
