@@ -1,17 +1,16 @@
-section>.container {
+section> .container{
     /* background-image: url(./Images/NYC_Hotdog_cart.jpg);
     background-repeat: no-repeat;
     background-position: center; */
     background-color: var(--cards);
     width: 40vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     border: 10px solid var(--cards);
     border-radius: 10px;
     display: inline-block;
 }
 
-section>.container h2 {
+.container>h2 {
     font-family: 'lilita one', cursive;
     font-weight: 100;
     background-color: rgb(226, 197, 161);
@@ -20,7 +19,7 @@ section>.container h2 {
     margin: 4px;
 }
 
-section>.container p {
+.container>p {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     /* padding-left: 10px; */
@@ -35,4 +34,20 @@ section>.container p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+article img{
+    width: 40%;
+}
+
+.Menu {
+    display: flex;
+}
+
+#pao img{
+    margin-right: 6px;
+}
+
+#mostard img{
+    width: 38%;
 }
