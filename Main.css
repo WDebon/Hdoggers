@@ -3,7 +3,7 @@
 } */
 
 :root {
-    --cards: #ffebcd
+    --cards: #ffebcd;
 }
 
 body {
@@ -21,6 +21,5 @@ body {
 hr {
     border: 2px solid rgba(92, 12, 32, 0.699);
     border-radius: 10px;
-    width: 100%;
     margin: 0px;
 }
