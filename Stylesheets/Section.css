@@ -19,7 +19,7 @@ h3 {
     padding-left: 5px;
     padding-top: 5px;
 }
-.container>h2 {
+.middle h2 {
     font-family: 'lilita one', cursive;
     font-weight: 100;
     background-color: rgb(226, 197, 161);
@@ -39,6 +39,10 @@ article p {
     margin: auto;
 }
 
+article{
+    margin-bottom: 2vw;
+}
+
 article p{
     margin: 0px;
     border-radius: 0px 10px 10px 0px;
@@ -56,6 +60,7 @@ article img{
     background-color: rgba(219, 153, 52, 0.171);
     padding-right: 5px;
     border-radius: 0px 0px 0px 50px;
+    height: 100%;
 }
 
 .Menu {
