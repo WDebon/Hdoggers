@@ -1,0 +1,29 @@
+.cardap article {
+    /*Box model stuff*/
+    margin-bottom: 2vw;
+}
+
+.cardap article p {
+    /*Box model stuff*/
+    margin: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.cardap img {
+    /*Box model stuff*/
+    width: 40%;
+    height: 100%;
+    padding-right: 5px;
+    border-radius: 0px 0px 0px 50px;
+    background-color: rgba(219, 153, 52, 0.171);
+}
+
+.Menu {
+    /*Display stuff*/
+    display: flex;
+}
+
+#mostard img {
+    /*Box model stuff*/
+    width: 38%;
+}
