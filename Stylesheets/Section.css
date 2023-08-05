@@ -10,6 +10,15 @@ section> .container{
     display: inline-block;
 }
 
+h3 {
+    font-family: 'Caveat', cursive;
+    margin-bottom:5px;
+    background-color: rgba(216, 173, 123, 0.432);
+    width: 40%;
+    border-radius: 0px 40px 0px 0px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
 .container>h2 {
     font-family: 'lilita one', cursive;
     font-weight: 100;
@@ -19,7 +28,8 @@ section> .container{
     margin: 4px;
 }
 
-.container>p {
+.container>p,
+article p {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     /* padding-left: 10px; */
@@ -27,6 +37,11 @@ section> .container{
     border-radius: 10px;
     padding: 10px;
     margin: auto;
+}
+
+article p{
+    margin: 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .middle{
@@ -38,14 +53,13 @@ section> .container{
 
 article img{
     width: 40%;
+    background-color: rgba(219, 153, 52, 0.171);
+    padding-right: 5px;
+    border-radius: 0px 0px 0px 50px;
 }
 
 .Menu {
     display: flex;
-}
-
-#pao img{
-    margin-right: 6px;
 }
 
 #mostard img{
