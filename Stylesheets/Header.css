@@ -13,12 +13,21 @@ header #logos img:hover {
 }
 
 header ul#logos {
+    /* mantem o negócio em cima */
+    position: sticky;
+    top: 0;
+
     background-color: var(--cards);
     border-radius: 10px 0px 0px 100px;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 230px;
+}
+
+.containerL div{
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
