@@ -1,0 +1,31 @@
+.containerL ul{
+    margin-top: 5px;
+    padding: 0px;
+    background-color: var(--cards);
+    border: 5px solid var(--cards);
+    width: fit-content;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#redirects li {
+    display: inline-flex;
+    padding: 5px;
+    background-color: rgb(233, 193, 160);
+    font-size: 15px;
+    font-family: 'changa', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#redirects li:hover {
+    background-color: rgb(153, 114, 63);
+}
+
+#Comb {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#redirects a {
+    text-decoration: none;
+    color: black;
+}
