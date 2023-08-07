@@ -22,20 +22,9 @@ body {
 
 hr {
     /*Box model stuff*/
-    margin: 0px;
+    margin: 5px;
     border: 2px solid rgba(92, 12, 32, 0.699);
     border-radius: 10px;
-}
-
-h3 {
-    /*Box model stuff*/
-    width: 40%;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    border-radius: 0px 40px 0px 0px;
-    background-color: rgba(216, 173, 123, 0.432);
-    /*Typography stuff*/
-    font-family: 'Caveat', cursive;
-    font-size: 1.3vw;
+    width: 90%;
+    align-self: center;
 }

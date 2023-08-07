@@ -22,7 +22,8 @@ section>.container {
 }
 
 .container>p,
-.cardap p {
+.cardap p,
+.comb p {
     /*Box model stuff*/
     margin: auto;
     padding: 10px;
