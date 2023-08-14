@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefones</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>Lista telefônica</header>
+        <form>
+            <label for="nome">Nome:<span class="red">*</span></label>
+            <input type="text" placeholder="Nome" id="nome" required>
+            <label for="tel">Telefone:<span class="red">*</span></label>
+            <input type="tel" placeholder="(XX) XXXXX-XXXXX" id="tel" required>
+            <label for="tag">Tag:</label>
+            <input type="color" name="tag" id="tag" required>
+            <label for="desc">Info. Adicional:</label>
+            <textarea name="Descrição" id="desc" cols="50" rows="5"></textarea>
+            <button type="submit">+</button>
+        </form>
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </thead>
+            <tbody>
+                <td id="tag-color"></td>
+                <td>Roberto</td>
+                <td>(19) 98189-1110</td>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequuntur odio ducimus sunt!
+                    Distinctio eum illum amet, repudiandae aperiam commodi accusantium nisi corrupti perferendis porro
+                    dolore odio quis tempora enim!
+                </p>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
