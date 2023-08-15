@@ -5,22 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telefones</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <header>Lista telefônica</header>
-        <form>
-            <label for="nome">Nome:<span class="red">*</span></label>
-            <input type="text" placeholder="Nome" id="nome" required>
-            <label for="tel">Telefone:<span class="red">*</span></label>
-            <input type="tel" placeholder="(XX) XXXXX-XXXXX" id="tel" required>
-            <label for="tag">Tag:</label>
-            <input type="color" name="tag" id="tag" required>
-            <label for="desc">Info. Adicional:</label>
-            <textarea name="Descrição" id="desc" cols="50" rows="5"></textarea>
-            <button type="submit">+</button>
-        </form>
+        <header>
+            <h1>Lista telefônica</h1>
+        </header>
+        <hr>
+        <div class="div-forma">
+            <form id="submit-form">
+                <div class="name-input">
+                    <label for="nome">Nome:<span class="red">*</span></label>
+                    <hr>
+                    <input type="text" placeholder="Nome" id="nome" required>
+                </div>
+                <div class="name-input">
+                    <label for="tel">Telefone:<span class="red">*</span></label>
+                    <hr>
+                    <input type="tel" placeholder="(XX) XXXXX-XXXXX" id="tel" required>
+                </div>
+                <div class="name-input">
+                    <label for="tag">Tag:</label>
+                    <hr>
+                    <input type="color" name="tag" id="tag" required>
+                </div>
+
+                <div class="name-input">
+                    <label for="desc">Info. Adicional:</label>
+                    <hr>
+                    <textarea name="Descrição" id="desc" cols="45" rows="5"></textarea>
+                </div>
+            </form>
+            <div class="rectangle"></div>
+            <button type="submit" form="submit-form">+</button>
+        </div>
+        <hr>
 
         <table>
             <thead>
@@ -32,11 +59,16 @@
                 <td id="tag-color"></td>
                 <td>Roberto</td>
                 <td>(19) 98189-1110</td>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequuntur odio ducimus sunt!
-                    Distinctio eum illum amet, repudiandae aperiam commodi accusantium nisi corrupti perferendis porro
-                    dolore odio quis tempora enim!
-                </p>
             </tbody>
+            <tfoot>
+            <td colspan="3">
+                <!-- <hr>--> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequuntur odio ducimus sunt! 
+                Distinctio eum illum amet, repudiandae aperiam commodi accusantium nisi corrupti perferendis porro
+                dolore odio quis tempora enim!
+                <!-- <hr> -->
+            </td>
+        </tfoot>
+        
         </table>
     </div>
 </body>
