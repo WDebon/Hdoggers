@@ -20,7 +20,7 @@
 }
 
 .rectangle,
-tfoot td {
+.desc{
     border-style: inset;
     border-width: 1px;
     border-radius: 5px;

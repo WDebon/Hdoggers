@@ -8,6 +8,12 @@ const desc_Input = document.getElementById("desc");
 
 const button_Input = document.querySelector("button")
 
+const form_Select = document.querySelector("form");
+
+let linhas = '';
+
+cor_Input.value = '#000000';
+
 // function telefone_Func(func) {
 
 //     const telArray = func.split("") //vai separar o input por cada letra
@@ -27,15 +33,42 @@ telefone_Input.addEventListener("keyup", function(e){
             // console.log(isNaN(telefone_Value))
             // button_Input.disabled = !telefone_Func(telefone_Input);
 
-            if(isNaN(telefone_Value)){
-                button_Input.style.backgroundColor = "grey";
-                button_Input.disabled = "true";
-            }else{
+            button_Input.disabled = isNaN(telefone_Value);
+
+            if(!isNaN(telefone_Value)){
                 button_Input.style.backgroundColor = "";
-                button_Input.disabled = "false";
+            }else{
+                button_Input.style.backgroundColor = "grey";
             }
-        
+        // console.log(button_Input.disabled)
 });
+
+form_Select.addEventListener("submit",function(e){
+
+    e.preventDefault()
+
+    const tabelaBody = document.querySelector('tbody');
+    const tabelaFoot = document.querySelector('tfoot');
+
+    let linha = '<tr>';
+
+    linha +=`<td id="tag-color" style="background-color: ${cor_Input.value};"></td>`;
+    linha += `<td>${nome_Input.value}</td>`;
+    linha +=`<td>${telefone_Input.value}</td>`;
+    linha += '</tr>';
+    linha += '<tr>';
+    linha += `<td colspan="3" class="desc">${desc_Input.value}</td>`
+    linha += '</tr>';
+    linhas += linha;
+
+    tabelaBody.innerHTML = linhas;
+    // tabelaFoot.innerHTML = linhas;
+
+    nome_Input.value = '';
+    telefone_Input.value = '';
+    desc_Input.value = '';
+    cor_Input.value = '#000000';
+})
 
 
 
