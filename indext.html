@@ -22,35 +22,51 @@
             <h1>Lista telefônica</h1>
         </header>
         <hr>
+
+        <!-- Lista -->
         <div class="div-forma">
+
+            <!-- Os inputs -->
             <form id="submit-form">
+
+                <!-- Nome -->
                 <div class="name-input">
                     <label for="nome">Nome:<span class="red">*</span></label>
                     <hr>
                     <input type="text" placeholder="Nome" id="nome" required>
                 </div>
+
+                <!-- Telefone -->
                 <div class="name-input">
                     <label for="tel">Telefone:<span class="red">*</span></label>
                     <hr>
-                    <input type="tel" placeholder="XX XXXXX XXXXX" id="tel" required>
+                    <input type="tel" placeholder="XX XXXXX XXXXX" id="tel"  required>
                     <p class="som-num closed">Somente números ! ! </p>
                 </div>
-                
+
+                <!-- Tag -->
                 <div class="name-input">
                     <label for="tag">Tag:</label>
                     <hr>
                     <input type="color" name="tag" id="tag" required>
                 </div>
 
+                <!-- Descrição -->
                 <div class="name-input">
                     <label for="desc">Info. Adicional:</label>
                     <hr>
                     <textarea name="Descrição" id="desc" cols="45" rows="5"></textarea>
                 </div>
+
             </form>
+
+            <!-- Retangulo atras do botâo -->
             <div class="rectangle"></div>
+
+            <!-- Botão -->
             <button type="submit" form="submit-form">+</button>
         </div>
+
         <hr>
 
         <table>
@@ -75,6 +91,7 @@
         
         </table>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
