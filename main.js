@@ -6,17 +6,12 @@ const cor_Input = document.getElementById("tag");
 
 const desc_Input = document.getElementById("desc");
 
-function telefone_Func(tel) {
-    const telArray = tel.split("")
+function telefone_Func(e) {
+    const telArray = e.split("")
 
     for (let i = 0; i < telArray.length; i++) 
     {
-        if(!isNaN(telArray[i])) {
-            console.log(telArray[i]);
-        } else {
-            console.log(telArray[i]);
-            return false
-        }
+        isNaN(telArray[i])
     }
 }
 
