@@ -68,7 +68,7 @@ form_Select.addEventListener("submit",function(e){
     linha +=`<td class="opened">${telefone_Input.value}</td>`;
     linha += '</tr class="opened">';
     linha += '<tr class="opened">';
-    linha += `<td colspan="3" class="desc">${desc_Input.value}</td>`
+    linha += `<td colspan="3" class="desc" style="max-width: 100px">${desc_Input.value}</td>`
     linha += '</tr>';
     linhas += linha;
 

@@ -20,7 +20,9 @@
 }
 
 .rectangle,
-.desc{
+.desc,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{
     border-style: inset;
     border-width: 1px;
     border-radius: 5px;

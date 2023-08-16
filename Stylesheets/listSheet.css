@@ -4,11 +4,6 @@ th {
     border-width: 1px;
 }
 
-.desc{
-    padding: 5px;
-}
-
-
 table {
     width: 100%;
     margin-top: 20px;
@@ -24,6 +19,11 @@ tbody td {
     align-items: center;
 }
 
-.desc{
+.desc {
     text-align: left;
+    overflow: auto;
+    max-width: ;
+    padding: 5px;
+    word-wrap: break-word;
 }
+
