@@ -10,7 +10,11 @@ const button_Input = document.querySelector("button")
 
 const form_Select = document.querySelector("form");
 
+const erro = document.querySelector("p");
+
 let linhas = '';
+
+erro.style.display = "none"
 
 cor_Input.value = '#000000';
 
@@ -37,8 +41,12 @@ telefone_Input.addEventListener("keyup", function(e){
 
             if(!isNaN(telefone_Value)){
                 button_Input.style.backgroundColor = "";
+                erro.style.display = "none"
+                erro.classList.remove("opened");
             }else{
                 button_Input.style.backgroundColor = "grey";
+                erro.style.display = "block"
+                erro.classList.add("opened");
             }
         // console.log(button_Input.disabled)
 });
@@ -48,7 +56,6 @@ form_Select.addEventListener("submit",function(e){
     e.preventDefault()
 
     const tabelaBody = document.querySelector('tbody');
-    const tabelaFoot = document.querySelector('tfoot');
 
     let linha = '<tr>';
 
@@ -62,7 +69,6 @@ form_Select.addEventListener("submit",function(e){
     linhas += linha;
 
     tabelaBody.innerHTML = linhas;
-    // tabelaFoot.innerHTML = linhas;
 
     nome_Input.value = '';
     telefone_Input.value = '';

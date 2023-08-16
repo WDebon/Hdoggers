@@ -10,23 +10,22 @@ body {
     padding-top: 100px;
 }
 
-/* @media (max-width: 900px) {
-     form {
-        flex-wrap: nowrap;
-    }
-    
-    form{
-        flex-wrap: wrap;
-    }
-}  */
+#nome {
+    background-image: url(Imagens/Icon.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+#tel {
+    background-image: url(Imagens/Phone.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
 .container {
     max-width: 550px;
     width: 100%;
     margin: 0 auto;
-}
-
-.red {
-    color: rgb(241, 84, 84);
 }
 
 header {
@@ -42,123 +41,39 @@ form {
     justify-content: space-between;
     max-width: 50%;
 }
-.rectangle{
-    transform: scaleX(2);
-    padding-left: 100px;
-    position: relative;
-    left: 13%;
-    z-index: -1;
-}
-.rectangle,
-tfoot td{
-    border-style: inset;
-    border-width: 1px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.103);
+
+.opened {
+    animation: open 1s forwards;
+    animation-timing-function: ease;
 }
 
-.div-forma {
-    /* padding: 10px; */
-    /* border-radius: 10px; */
-    /* background-color: #7069691c; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+
+    60%{
+        transform: scale(1.2 0.6);
+    }
+
+    100% {
+        transform: scale(2 0.5);
+    }
+    }
 }
 
-.name-input {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-bottom: 10px;
+.closed{
+    display: none;
 }
 
-.name-input input,
-.name-input textarea,
-.name-input button {
-    border: none;
-    outline: none;
-}
+@keyframes close-d {
+    from {
+        scale: 1;
+    }
 
-#nome {
-    background-image: url(Imagens/Icon.png);
-    background-size: 10px;
-    background-repeat: no-repeat;
-}
-
-#tel {
-    background-image: url(Imagens/Phone.png);
-    background-size: 10px;
-    background-repeat: no-repeat;
-}
-
-form hr {
-    padding: 2px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.container>hr {
-    margin: 5px;
-}
-
-button {
-    border-style: inset;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    width: 50px;
-    margin-right: 0px;
-    margin-left: 0px;
-    border: 1px inset rgba(0, 128, 0, 0.185);
-    cursor: pointer;
-    background-color: rgb(143, 218, 149);
-    font-size: 50px;
-    color: white;
-    border-radius: 5px;
-}
-
-#desc {
-    resize: none;
-    width: max-content;
-    padding: 10px;
-    border: 5px solid white;
-}
-
-#nome,
-#tel,
-#desc,
-#tag {
-    border-radius: 0px 0px 5px 5px;
-}
-
-#nome,
-#tel {
-    border: 3px solid white;
-    height: 30px;
-    padding-left: 10px;
-}
-
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-spacing: 0px;
-}
-
-#tag-color {
-    max-width: 100px;
-    background-color: rgb(177, 154, 93);
-}
-
-tbody td {
-    text-align: center;
-    align-items: center;
-}
-
-th {
-    border-bottom: 1px inset black;
-}
-
-tfoot td{
-    padding: 5px;
+    to {
+        scale: 0;
+    }
 }
 
 /* table hr {
