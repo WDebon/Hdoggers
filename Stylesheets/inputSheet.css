@@ -67,11 +67,15 @@ button {
     margin-right: 0px;
     margin-left: 0px;
     border: 1px inset rgba(0, 128, 0, 0.185);
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: rgb(143, 218, 149);
     font-size: 50px;
     color: white;
     border-radius: 5px;
+}
+
+button:active{
+    background-color: rgb(100, 153, 105);
 }
 
 #desc {

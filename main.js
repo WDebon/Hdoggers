@@ -14,6 +14,8 @@ const erro = document.querySelector("p");
 
 let linhas = '';
 
+button_Input.style.cursor = "pointer";
+
 erro.style.display = "none"
 
 cor_Input.value = '#000000';
@@ -41,12 +43,14 @@ telefone_Input.addEventListener("keyup", function(e){
 
             if(!isNaN(telefone_Value)){
                 button_Input.style.backgroundColor = "";
+                button_Input.style.cursor = "pointer";
                 erro.style.display = "none"
-                erro.classList.remove("opened");
+                erro.classList.remove("opened1");
             }else{
                 button_Input.style.backgroundColor = "grey";
+                button_Input.style.cursor = "";
                 erro.style.display = "block"
-                erro.classList.add("opened");
+                erro.classList.add("opened1");
             }
         // console.log(button_Input.disabled)
 });
@@ -59,11 +63,11 @@ form_Select.addEventListener("submit",function(e){
 
     let linha = '<tr>';
 
-    linha +=`<td id="tag-color" style="background-color: ${cor_Input.value};"></td>`;
-    linha += `<td>${nome_Input.value}</td>`;
-    linha +=`<td>${telefone_Input.value}</td>`;
-    linha += '</tr>';
-    linha += '<tr>';
+    linha +=`<td id="tag-color" style="background-color: ${cor_Input.value};" class="opened"></td>`;
+    linha += `<td class="opened">${nome_Input.value}</td>`;
+    linha +=`<td class="opened">${telefone_Input.value}</td>`;
+    linha += '</tr class="opened">';
+    linha += '<tr class="opened">';
     linha += `<td colspan="3" class="desc">${desc_Input.value}</td>`
     linha += '</tr>';
     linhas += linha;
