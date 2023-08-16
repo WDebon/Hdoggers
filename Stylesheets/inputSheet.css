@@ -50,18 +50,6 @@ tfoot td {
     outline: none;
 }
 
-#nome {
-    background-image: url(Imagens/Icon.png);
-    background-size: 10px;
-    background-repeat: no-repeat;
-}
-
-#tel {
-    background-image: url(Imagens/Phone.png);
-    background-size: 10px;
-    background-repeat: no-repeat;
-}
-
 form hr {
     padding: 2px;
     border-radius: 10px 10px 0px 0px;
